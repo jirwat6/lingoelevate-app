@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LingoElevate - แพลตฟอร์มฝึกฝนภาษาอังกฤษพรีเมียมครบวงจร ฟัง พูด อ่าน เขียน จากระดับพื้นฐานถึงระดับสูงสุด ด้วยระบบประเมินเสียงพูดและการเขียนอัจฉริยะ">
+  <title>LingoElevate - เก่งอังกฤษครบ 4 ทักษะ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Premium Neon Glow Background Orbs -->
+  <div class="glow-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Main Application Wrapper -->
+  <div class="app-container">
+    
+    <!-- Dynamic Header Navigation Bar -->
+    <header id="app-header">
+      <!-- Populated dynamically by app.js -->
+    </header>
+
+    <!-- Main View Content Area -->
+    <main id="app-root">
+      <!-- Views are loaded dynamically here: Dashboard, PracticeSession, PlacementTest, LevelExam -->
+      <div class="flex-center" style="min-height: 50vh; flex-direction: column; gap: 20px;">
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.8rem; background: var(--grad-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          กำลังโหลดศูนย์การเรียนรู้...
+        </h2>
+        <div style="color: var(--text-secondary); font-size: 0.95rem;">กรุณารอสักครู่ขณะเชื่อมต่อโมดูลทักษะภาษา</div>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Background Music/Sound FX elements (Optionally hook up locally) -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Load Data Curriculum first, then App core engine -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
